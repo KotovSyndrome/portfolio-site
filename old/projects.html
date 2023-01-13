@@ -33,69 +33,54 @@
                     </ul>
                 </div>
             </div>
-        </nav><!-- Masthead-->
-<header class="masthead bg-primary text-white text-center" id="bio">
-    <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Avatar Image-->
-        <img class="masthead-avatar mb-5" src="assets/img/Selfie.jpeg" alt="..." />
-        <!-- Masthead Heading-->
-        <h1 class="masthead-heading mb-0">Hi, I'm Payam Katoozian!</h1>
-        <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
-        <!-- Masthead Subheading-->
-        <p class="masthead-subheading font-weight-light mb-0">Software Developer - Problem Solver - Transportation Enthusiast</p>
-    </div>
-</header>
-<!-- Portfolio Section-->
+        </nav>
+        <!-- Masthead-->
 
-<!-- About Section + left languages sidebar -->
-<section class="page-section text-black mb-0" id="about">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                <h2 class="page-section-heading text-center text-uppercase text-black">My Skills</h2>
-                <!-- Icon Divider--> 
-                <div class="divider-custom divider-dark">
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio masthead" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <div style="border: 2px solid; border-radius: 10px;">
-                    <ul>
-                        <li><p class="lead">JavaScript</p></li>
-                        <li><p class="lead">React</p></li>
-                        <li><p class="lead">Node.JS</p></li>
-                        <li><p class="lead">Next.JS</p></li>
-                        <li><p class="lead">Prisma</p></li>
-                        <li><p class="lead">PostgreSQL</p></li>
-                    </ul>
-                </div>
-            </div>
-            
-            <div class="col-lg-6">
-                <h2 class="page-section-heading text-center text-uppercase text-black">About Me</h2>
-                <!-- Icon Divider--> 
-                <div class="divider-custom divider-dark">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div style="border: 2px solid; border-radius: 5px;">
-                        <div class="ms-auto"><p class="lead"> Welcome to my portfolio website!</p></div>
-                        <div class="ms-auto"><p class="lead">I am a software developer with a CS degree, a plethora of projects under my belt, and a whole lot of gumption.</p></div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Amtrak Train Tracker</div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Amtrak_logo.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">LinkedIn Post Generator</div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/linkedin.png" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white">Flight Tracker</div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/airplane-cartoon-an-illustration-of-a-fun-airplane-cartoon-2BWYK5B.jpg" alt="..." />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         
-    </div>
-</section>        <!-- Footer-->
+        <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
                 <div class="row">
@@ -139,7 +124,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Amtrak Train Tracker</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -147,9 +132,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/Amtrak_logo.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">This project is a little train tracker I made!</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -171,7 +156,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">LinkedIn Post Generator</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -179,9 +164,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/linkedin.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">My buddy Phil and I decided that we were tired of seeing the same trite hustle culture posts every day. Therefore, we made a tool that would make fun of these posts. Check it out!</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window
@@ -203,7 +188,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Flight Tracker</h2>
                                     <!-- Icon Divider-->
                                     <div class="divider-custom">
                                         <div class="divider-custom-line"></div>
@@ -211,9 +196,9 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/airplane-cartoon-an-illustration-of-a-fun-airplane-cartoon-2BWYK5B.jpg" alt="..." />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                                    <p class="mb-4">This may not be as interesting as the one that tracks Elon Musk's jet, but meh, close enough. Track your favorite airline's planes here!</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
                                         <i class="fas fa-xmark fa-fw"></i>
                                         Close Window

@@ -18,13 +18,11 @@ pages = [
 ]
 
 def main():
-
-    header = open("templates/top.html").read()
-    footer = open("templates/bottom.html").read()
+    template = open("templates/base.html").read()
 
     for page in pages:
-        old_page_contents = open(page["filename"]).read()
-        new_contents = header + old_page_contents + footer
+        page_contents = open(page["filename"]).read()
+        new_contents = template.replace("{{content}}", page_contents)
         open(page["output"], "w+").write(new_contents)
 
 main()

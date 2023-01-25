@@ -3,7 +3,7 @@ pages = [
     {
         "filename": "content/contact.html",
         "output": "docs/contact.html",
-        "title": "Contact Info"
+        "title": "Contact Form"
     },
     {
         "filename": "content/index.html",
@@ -22,11 +22,12 @@ def main():
 
     for page in pages:
         page_contents = open_read_stream(page["filename"])
-        new_contents = create_page(page_contents, template)
+        new_contents = create_page(page_contents, template, page["title"])
         open_write_stream(page["output"], new_contents)
 
-def create_page(page, template):
+def create_page(page, template, title):
     new_html = template.replace("{{content}}", page)
+    new_html = template.replace("{{title}}", title)
     return new_html
 
 def open_read_stream(stream):

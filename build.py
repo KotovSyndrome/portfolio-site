@@ -1,14 +1,30 @@
-header = open("templates/top.html").read()
-footer = open("templates/bottom.html").read()
+#metadata
+pages = [
+    {
+        "filename": "content/contact.html",
+        "output": "docs/contact.html",
+        "title": "Contact Info"
+    },
+    {
+        "filename": "content/index.html",
+        "output": "docs/index.html",
+        "title": "Homepage"
+    },
+    {
+        "filename": "content/projects.html",
+        "output": "docs/projects.html",
+        "title": "My Projects"
+    }
+]
 
-contact = open("content/contact.html").read()
-index = open("content/index.html").read()
-projects = open("content/projects.html").read()
+def main():
 
-new_contact = header + contact + footer
-new_index = header + index + footer
-new_projects = header + projects + footer
+    header = open("templates/top.html").read()
+    footer = open("templates/bottom.html").read()
 
-open("docs/contact.html", "w+").write(new_contact)
-open("docs/index.html", "w+").write(new_index)
-open("docs/projects.html", "w+").write(new_projects)
+    for page in pages:
+        old_page_contents = open(page["filename"]).read()
+        new_contents = header + old_page_contents + footer
+        open(page["output"], "w+").write(new_contents)
+
+main()

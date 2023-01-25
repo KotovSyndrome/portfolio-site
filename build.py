@@ -18,11 +18,22 @@ pages = [
 ]
 
 def main():
-    template = open("templates/base.html").read()
+    template = open_read_stream("templates/base.html")
 
     for page in pages:
-        page_contents = open(page["filename"]).read()
-        new_contents = template.replace("{{content}}", page_contents)
-        open(page["output"], "w+").write(new_contents)
+        page_contents = open_read_stream(page["filename"])
+        new_contents = create_page(page_contents, template)
+        open_write_stream(page["output"], new_contents)
 
-main()
+def create_page(page, template):
+    new_html = template.replace("{{content}}", page)
+    return new_html
+
+def open_read_stream(stream):
+    return open(stream).read()
+
+def open_write_stream(stream, data):
+    return open(stream, "w+").write(data)
+
+if __name__ == "__main__":
+    main()

@@ -36,10 +36,6 @@ def main():
 
 def create_page(page, template, title, navbar1, navbar2, navbar3):
     new_html = template.replace("{{content}}", page).replace("{{title}}", title).replace("{{navbar1}}", navbar1).replace("{{navbar2}}", navbar2).replace("{{navbar3}}", navbar3)
-    # new_html = template.replace("{{title}}", title)
-    # new_html = template.replace("{{navbar1}}", navbar1)
-    # new_html = template.replace("{{navbar2}}", navbar2)
-    # new_html = template.replace("{{navbar3}}", navbar3)
     return new_html
 
 def open_read_stream(stream):

@@ -27,7 +27,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black" href="index.html">Bio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black" href="index.html">- Bio -</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black" href="projects.html">Projects</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-black" href="contact.html">Contact</a></li>
                     </ul>
@@ -36,7 +36,69 @@
         </nav>
 
 <!-- MIDDLE, BETWEEN TOP AND BOTTOM -->
-        {{content}}
+        <!-- Masthead-->
+<header class="masthead bg-primary text-white text-center" id="bio">
+    <div class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <img class="masthead-avatar mb-5" src="assets/img/Selfie.jpeg" alt="..." />
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading mb-0">Hi, I'm Payam Katoozian!</h1>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Software Developer - Problem Solver - Transportation Enthusiast</p>
+    </div>
+</header>
+<!-- Portfolio Section-->
+
+<!-- About Section + left languages sidebar -->
+<section class="page-section text-black mb-0" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <h2 class="page-section-heading text-center text-uppercase text-black">My Skills</h2>
+                <!-- Icon Divider--> 
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div style="border: 2px solid; border-radius: 10px;">
+                    <ul>
+                        <li><p class="lead">JavaScript</p></li>
+                        <li><p class="lead">React</p></li>
+                        <li><p class="lead">Node.JS</p></li>
+                        <li><p class="lead">Next.JS</p></li>
+                        <li><p class="lead">Prisma</p></li>
+                        <li><p class="lead">PostgreSQL</p></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <h2 class="page-section-heading text-center text-uppercase text-black">About Me</h2>
+                <!-- Icon Divider--> 
+                <div class="divider-custom divider-dark">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div style="border: 2px solid; border-radius: 5px;">
+                        <div class="ms-auto"><p class="lead"> Welcome to my portfolio website!</p></div>
+                        <div class="ms-auto"><p class="lead">I am a software developer with a CS degree, a plethora of projects under my belt, and a whole lot of gumption.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
 
         <!-- Footer-->
         <footer class="footer text-center">

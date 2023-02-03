@@ -27,6 +27,11 @@ def create_page(page_contents, template, all_pages, current_page):
     )
     return new_html
 
+def create_new_content_page(filename):
+    filepath = "content/" + filename + ".html"
+    placeholder_text = "<h1>Placeholder content!</h1>\n\n<p>Placeholder text!</p>"
+    open(filepath, "w+").write(placeholder_text)
+
 def ssg():    
     all_html_files = glob.glob('content/*.html')
     pages = init_pages_dict(all_html_files)
